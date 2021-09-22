@@ -1,0 +1,34 @@
+@import "../../style/var.scss";
+
+.header{
+    padding: 3.35em 0 5em;
+    &-wrapper{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       .logo{
+           display: block;
+       }
+    }
+}
+.menu{
+    display: flex;
+    width: auto;
+    margin: 0 -0.9em;
+    &__item{
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 24px;
+        text-decoration: none;
+        color: $color_secondary;
+        margin: 0 0.9em;
+        &--active{
+            color: $color_text;
+            font-weight: 600;
+            letter-spacing: 1.25px;
+        }
+    }
+    &.hide{
+        display: none;
+    }
+}
